@@ -1,0 +1,227 @@
+@mixin smooth-menu-hover {
+  transition: all 0.3s ease 0s;
+}
+
+@mixin primary-overflow {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background-color: $black;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($secondary-dark, 0.5);
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($secondary-dark, 0.8);
+  }
+}
+
+@mixin primary-overflow-scroll {
+  @include use-handcursor();
+  &::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    border-radius: 25px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $text-op;
+    border-radius: 25px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $text-op;
+    border-radius: 25px;
+  }
+}
+
+@mixin primary-overflow-scroll-hidden {
+  @include use-handcursor();
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+}
+@mixin use-handcursor {
+  cursor: pointer;
+  cursor: hand;
+}
+
+@mixin disable-mouse-events {
+  pointer-events: none;
+}
+
+@mixin basic-card() {
+  border-radius: 4px !important;
+  box-shadow: 0px 4px 20px 0px $dark-op-10 !important;
+}
+
+@mixin custom-checkbox($border-radius: 50%) {
+  flex: 0 1 auto;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  input {
+    opacity: 0;
+  }
+
+  span {
+    padding-left: 1.2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.2rem;
+      left: 0;
+      display: block;
+      width: 1.8rem;
+      height: 1.8rem;
+      pointer-events: none;
+      user-select: none;
+      background-color: $white;
+      border: 1px solid $secondary-dark;
+      border-radius: $border-radius;
+    }
+  }
+
+  input:checked ~ span::before {
+    background-image: url(/images/svg/checkmark.svg);
+    background-position: -0.12rem 0.12rem;
+    background-size: 1.7rem;
+    background-repeat: no-repeat;
+    background-color: $black;
+    border-color: $black;
+  }
+}
+@mixin basic-font($fontSize, $fontWeight, $fontColor) {
+  font-family: $primaryFont !important;
+  font-size: $fontSize !important;
+  font-weight: $fontWeight !important;
+  color: $fontColor !important;
+}
+
+@mixin dflex($flex-direction, $justify-content, $align-items, $flex-wrap) {
+  display: flex;
+  @if $flex-direction != "" {
+    flex-direction: $flex-direction;
+  }
+  @if $justify-content != "" {
+    justify-content: $justify-content;
+  }
+  @if $align-items != "" {
+    align-items: $align-items;
+  }
+  @if $flex-wrap != "" {
+    flex-wrap: $flex-wrap;
+  }
+}
+
+.dflex {
+  @include dflex(row, space-between, center, nowrap);
+}
+
+@mixin mini-card {
+  border-radius: 4px;
+  box-shadow: 0px 3px 12px 0px $dark-op-08;
+}
+@mixin basic-text {
+  @include basic-font($fs-12, $fw-medium, $text-1);
+}
+@mixin sub-text {
+  @include basic-font($fs-10, $fw-medium, $text-4);
+}
+
+@mixin primary-btn {
+  background-color: $primary !important;
+  border-radius: 4px !important;
+  padding: 8px 20px !important;
+  text-transform: capitalize !important;
+  @include basic-font($fs-14, $fw-bold, $white);
+  box-shadow: none !important;
+  border: 0px !important;
+}
+@mixin primary-card {
+  border-radius: 4px;
+  border: 1px solid $text-4;
+  background: $white;
+}
+@mixin secondary-card {
+  border-radius: 4px;
+  border: 1px solid $text-4;
+  padding: 20px;
+  box-shadow: unset;
+}
+@mixin primary-outline-btn {
+  background-color: $white !important;
+  border-radius: 4px !important;
+  padding: 8px 20px !important;
+  text-transform: capitalize !important;
+  @include basic-font($fs-14, $fw-bold, $primary);
+  box-shadow: none !important;
+  border: 1px solid $primary !important;
+}
+@mixin title-regular-24 {
+  @include basic-font($fs-24, $fw-regular, $secondary);
+}
+@mixin title-bold-16 {
+  @include basic-font($fs-16, $fw-bold, $secondary);
+}
+@mixin title-regular-16 {
+  @include basic-font($fs-16, $fw-regular, $text-2);
+}
+@mixin title-regular-12 {
+  @include basic-font($fs-12, $fw-regular, $text-3);
+}
+@mixin title-bold-12 {
+  @include basic-font($fs-12, $fw-bold, $text-4);
+}
+@mixin title-bold-14 {
+  @include basic-font($fs-14, $fw-bold, $secondary);
+}
+@mixin text-regular-14 {
+  @include basic-font($fs-14, $fw-regular, $text-3);
+}
+
+@mixin devices($breakpoint) {
+  @if $breakpoint ==desktop-lg {
+    @media only screen and (min-device-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==desktop-md {
+    @media only screen and (min-device-width: 1200px) and (max-device-width: 1439.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==tablet-landscape {
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1199.98px) and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+@mixin font-icons {
+  font-size: $fs-16;
+  font-weight: $fw-bold;
+  color: $secondary;
+  cursor: pointer;
+}

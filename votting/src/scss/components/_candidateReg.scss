@@ -1,0 +1,36 @@
+.candidate_reg{
+    min-height: 50vh;
+    margin-top: 1px;
+    .candidate_paper{
+        padding: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .candidate_header{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .candidate_name{
+ display: flex;
+ align-items: center;
+    }
+    .candidate_mail{
+ display: flex;
+ align-items: center;
+    }
+    .candidate_voterId{
+        display: flex;
+ align-items: center;
+    }
+    .candidate_subbutton{
+        color: black;
+        background: linear-gradient(to left, #4157A1 , #41ADCE);
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 60%;
+        color: white;
+        border-radius: 20px;
+    }
+}

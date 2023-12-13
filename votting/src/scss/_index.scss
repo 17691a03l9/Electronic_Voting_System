@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~react-toastify/dist/ReactToastify.css";
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "./extensions";
+@import "./utilities";
+@import "base/fonts";
+
+@import "base/base";
+@import "base/typography";
+@import "./reset";
+@import "base/custome";
+@import "base/fonticons.scss";
+
+@import "components/otppopup";
+@import "components/candidateReg.scss"

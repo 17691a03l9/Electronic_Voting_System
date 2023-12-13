@@ -1,0 +1,189 @@
+[class^="ls-"],
+[class*=" ls-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "LSIconicFont" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ls-cancel-orders:before {
+  content: "\e935";
+}
+.ls-Inprogress-orders:before {
+  content: "\e936";
+}
+.ls-add-icon-black:before {
+  content: "\e900";
+}
+.ls-administration:before {
+  content: "\e901";
+}
+.ls-advance-filter:before {
+  content: "\e902";
+}
+.ls-arrowActive:before {
+  content: "\e903";
+}
+.ls-broadcast:before {
+  content: "\e904";
+}
+.ls-calendarIcon:before {
+  content: "\e905";
+}
+.ls-calendar-primary:before {
+  content: "\e906";
+}
+.ls-client_admin_db:before {
+  content: "\e907";
+}
+.ls-close:before {
+  content: "\e908";
+}
+.ls-closeAll:before {
+  content: "\e909";
+}
+.ls-compendium:before {
+  content: "\e90a";
+}
+.ls-crossbtn:before {
+  content: "\e90b";
+}
+.ls-dashboard:before {
+  content: "\e90c";
+}
+.ls-delete:before {
+  content: "\e90d";
+}
+.ls-dropdown-icon:before {
+  content: "\e90e";
+}
+.ls-edit:before {
+  content: "\e90f";
+}
+.ls-facilities:before {
+  content: "\e910";
+}
+.ls-facility_db:before {
+  content: "\e911";
+}
+.ls-hamburger-menu:before {
+  content: "\e912";
+}
+.ls-icon-search:before {
+  content: "\e913";
+}
+.ls-id:before {
+  content: "\e914";
+}
+.ls-info_icon:before {
+  content: "\e915";
+}
+.ls-labManagement:before {
+  content: "\e916";
+}
+.ls-labs:before {
+  content: "\e917";
+}
+.ls-labs_db:before {
+  content: "\e918";
+}
+.ls-mail:before {
+  content: "\e919";
+}
+.ls-nurses_db:before {
+  content: "\e91a";
+}
+.ls-order-config:before {
+  content: "\e91b";
+}
+.ls-patientManagment:before {
+  content: "\e91c";
+}
+.ls-patients_db:before {
+  content: "\e91d";
+}
+.ls-pdf:before {
+  content: "\e91e";
+}
+.ls-phone:before {
+  content: "\e91f";
+}
+.ls-physicians_db:before {
+  content: "\e920";
+}
+.ls-profile:before {
+  content: "\e921";
+}
+.ls-provider_db:before {
+  content: "\e922";
+}
+.ls-reconciliation:before {
+  content: "\e923";
+}
+.ls-report:before {
+  content: "\e924";
+}
+.ls-rightarrow:before {
+  content: "\e925";
+}
+.ls-setting:before {
+  content: "\e926";
+}
+.ls-signout:before {
+  content: "\e927";
+}
+.ls-storage:before {
+  content: "\e928";
+}
+.ls-tenants_db:before {
+  content: "\e929";
+}
+.ls-tenantsMenuIcon:before {
+  content: "\e92a";
+}
+.ls-tick_icon:before {
+  content: "\e92b";
+}
+.ls-time-primary:before {
+  content: "\e92c";
+}
+.ls-total_orders_db:before {
+  content: "\e92d";
+}
+.ls-translate:before {
+  content: "\e92e";
+}
+.ls-uploadIcon:before {
+  content: "\e92f";
+}
+.ls-uploadIconActive:before {
+  content: "\e930";
+}
+.ls-uploadLg:before {
+  content: "\e931";
+}
+.ls-users:before {
+  content: "\e932";
+}
+.ls-viewDetails-arrow:before {
+  content: "\e933";
+}
+.ls-warning-icon:before {
+  content: "\e934";
+}
+
+.ls-outlined-up-arrow {
+  transform: rotate(270deg);
+  @include font-icons;
+}
+.ls-outlined-down-arrow {
+  transform: rotate(90deg);
+  @include font-icons;
+}

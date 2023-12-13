@@ -1,0 +1,91 @@
+.fs-12 {
+  font-size: $fs-12;
+}
+.fs-14 {
+  font-size: $fs-14;
+}
+.fs-16 {
+  font-size: $fs-16 !important;
+}
+.fs-24 {
+  font-size: $fs-24;
+}
+.fs-32 {
+  font-size: $fs-32;
+}
+.fs-64 {
+  font-size: $fs-64;
+}
+.fw-light {
+  font-weight: 300 !important;
+}
+.fw-regular {
+  font-weight: 400 !important;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
+.fw-bold {
+  font-weight: 600 !important;
+}
+.fw-dark {
+  font-weight: 700 !important;
+}
+.description {
+  @include basic-font($fs-12, $fw-medium, $grey-dark);
+}
+.list {
+  &__header {
+    @include dflex(row, space-between, center, nowrap);
+
+    h5 {
+      @include basic-font($fs-16, $fw-bold, $text-1);
+    }
+  }
+}
+.orderPreview {
+  &__wrapper {
+    .MuiDivider-root {
+      border-color: $text-4;
+      padding-top: 16px;
+      margin-bottom: 16px;
+    }
+    h6 {
+      width: 100%;
+      @include basic-font($fs-16, $fw-bold, $text-1);
+      margin-bottom: 12px;
+    }
+    label {
+      width: 100%;
+      text-transform: uppercase;
+      @include basic-font($fs-12, $fw-regular, $text-3);
+    }
+    b {
+      width: 100%;
+      @include basic-font($fs-12, $fw-bold, $text-2);
+    }
+  }
+}
+.name {
+  &__value {
+    &--text {
+      p {
+        @include basic-font($fs-12, $fw-regular, $text-3);
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+      b {
+        @include basic-font($fs-12, $fw-bold, $text-2);
+      }
+    }
+  }
+}
+.recordsCount {
+  @include basic-font($fs-14, $fw-regular, $secondary);
+}
+.overflow--text {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

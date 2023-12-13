@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+}
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+ul,
+ol,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px $white inset !important;
+}
+
+*[disabled] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+a {
+  &[role="tab"] {
+    cursor: pointer;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  font-weight: normal;
+  font-size: $fs-14;
+  line-height: 1.42857143;
+  min-height: 500px;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}

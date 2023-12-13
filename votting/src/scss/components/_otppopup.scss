@@ -1,0 +1,33 @@
+.success_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    min-width: 363px;
+    min-height: 283px;
+    text-align: center;
+    @include dflex(column, center, center, "");
+    padding: 31px 27px 27px 27px;
+  
+    .modal-modal-title {
+      @include title-bold-14;
+      margin-bottom: 15px;
+    }
+  
+    .modal-modal-description {
+      @include text-regular-14;
+      margin-bottom: 20px;
+    }
+  
+    .modal-buttons-wrapper {
+      .primary-btn {
+        margin-left: 20px;
+        min-width: 128px;
+      }
+  
+      .primary-outline-btn {
+        min-width: 128px;
+      }
+    }
+  }
